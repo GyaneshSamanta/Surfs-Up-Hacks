@@ -1,106 +1,111 @@
+# Visit a Beach — Surfs Up Hacks
+
+> **Before you head to the beach: check the weather, get a packing list, and grab a caption for your Insta. Built in 3 days at Surfs Up Hacks.**
+
 ![Banner](assets/repository/banner.png)
-# Team megaBite
-Official entry of Team megaBite, from SRM Institute of Science and Technology, Kattankulathur, India, to [Surfs Up Hack](https://surfsuphacks.devpost.com/).
 
-## Links to Surfs Up Hack ⚓
-1. [Website](https://organize.mlh.io/participants/events/6800-surfs-up-hacks)
-2. [Devpost](https://surfsuphacks.devpost.com/)
+![Hackathon](https://img.shields.io/badge/hackathon-Surfs%20Up%20Hacks-1ca0f2) ![Web](https://img.shields.io/badge/web-HTML%20%2B%20JS-yellow) ![Android](https://img.shields.io/badge/android-Java-green)
 
-![Image](assets/repository/original.png)
+---
 
-## Problem Statement 🚧
+## About
 
-Most of us like to plan our outings to nearby beaches but often, we miss out on checking essential details like the weather, taking the temperature and humidity into consideration, when we pack things to carry with ourselves.
+**Who:** Team **megaBite** — 4 students from SRM Institute of Science and Technology, Kattankulathur. Members included Gyanesh Samanta, Aaishika S. B., [pragya-bharti](https://www.github.com/pragya-bharti), and [yashsaini24](https://www.github.com/yashsaini24).
+**What:** *Visit a Beach* — a beach-day companion that pulls live weather, recommends what to pack based on temperature and humidity, and serves Insta-ready captions.
+**When:** Built in 3 days at **Surfs Up Hacks** (June 2021), an MLH-organized event.
+**Where:** Web ([visitabeach.netlify.app](http://visitabeach.netlify.app)) + Android app (Java).
+**Why:** People plan beach trips and forget the sunscreen. We made an app that tells you exactly what to bring before you leave.
 
-## Background 📖
+## The Story
 
-Say Hi to Jack 👦. Jack loves visiting the Long Beach but often comes home sunburnt. If you ask us why, it's because he never carries sunscreen with him. Jack's mum really hates that.
+Meet Jack. Jack loves the beach. Jack always forgets sunscreen. Jack's mum hates that.
 
-If only Jack could find a Website that would give him recommendations for things to carry according to the weather at the Long Beach... 🤔
+Visit a Beach fixes Jack — and any other beach-goer — by chaining three APIs into one experience:
 
-## Solution 💡
-Meet Maeve 👧! Maeve is Jack's classmate and guess what, she also loves visiting nearby beaches!
+1. **Live weather** via the OpenWeatherMap *Current Weather* API.
+2. **Smart packing chatbot** built on **Collect.chat** that branches by temperature + humidity. *Hot and dry?* Sunscreen, hat, water. *Cool and breezy?* A windbreaker.
+3. **Caption generator** with curated beach quotes for Insta posts.
 
-Well, Maeve heard about Jack's problem and she immediately recommended this website she always refers to before leaving for her favorite beach, [visitabeach.online](http://visitabeach.netlify.app)!
+We shipped two surfaces:
 
-Through **Visit a Beach**, Maeve is able to track the weather at Long Beach and by interacting with the chatbot available, she is also notified of all the things that she should carry according to the temparature and the humidity at the beach (including a sunscreen!).
+- **Web app** — vanilla JS + jQuery + Bootstrap, time-based background gradients
+- **Android app** — Java app under `Android App/VisitaBeach/`
 
-Moreover, she gets some amazing quotes and captions that she can use to flaunt her pictures taken at the beach over Social Media!
+Three-day timeline:
 
-## Screenshots 📷
-![Screenshot](assets/repository/screenshot.png)
-![Screenshot](assets/repository/screenshot1.png)
-![Screenshot](assets/repository/screenshot2.png)
-![Screenshot](assets/repository/image.jpeg)
-![Screenshot](assets/repository/image2.jpeg)
-![Screenshot](assets/repository/image3.jpeg)
-![Screenshot](assets/repository/image4.jpeg)
-![Screenshot](assets/repository/image5.jpeg)
+- **Day 1:** docs, frontend scaffold, chatbot wiring, API key config
+- **Day 2:** API integration, Android app, quotes section
+- **Day 3:** responsiveness pass, polish, docs
 
-## Installation and Execution 🔧
- - To check out the Website, click [here](https://visitabeach.netlify.app).
- - To locally run the Website, follow these steps:
-   1. Clone the repository using `git clone https://github.com/aaishikasb/Surfs-Up-Hacks.git`.
-   2. Open `index.html`.
-   3. Make sure if you have an active internet connection so the page is able to load data from the API.
+We registered three domains for the submission: `visitabeach.online`, `beachwith.tech`, `beachwith.us`.
 
- - To check out the Android Application, download the `app-debug.apk` from under the `Releases` tab.
- - To locally check the working and functionality of the app, follow these steps:
-   1. Directly import the repository onto `Android Studio`.
-   2. Click on `File`>`New`>`Project from Version Control`>`GitHub`.
-   3. Enter your Username and Password and hit `Clone`.
+## Gallery
 
-## Timeline ⏰
- - Day 1 Checkpoints
-   - [x] Initial Documentation
-   - [x] Set up Front End
-   - [x] Create the Chatbot
-   - [x] Implement UI/UX Principles
-   - [x] Configure API
- - Day 2 Checkpoints
-   - [ ] Enable time-based Background
-   - [ ] Fetch Geolocation with Geocoding API
-   - [x] Connect API
-   - [x] Update Android App
-   - [x] Configure Chatbot
-   - [x] Add Quotes Section
-   - [x] Update Sub Pages
- - Day 3 Checkpoints
-   - [x] Ensure Responsiveness
-   - [x] Update Documentation
+| | | |
+|---|---|---|
+| ![1](assets/repository/screenshot.png) | ![2](assets/repository/screenshot1.png) | ![3](assets/repository/screenshot2.png) |
+| ![4](assets/repository/image.jpeg) | ![5](assets/repository/image2.jpeg) | ![6](assets/repository/image3.jpeg) |
 
-## Technology Stack 💻
-### Languages and Frameworks
- - Java
- - HTML
- - CSS
- - JavaScript
- - JQuery
- - Bootstrap
+---
 
-### Attributions
-  - Public API: Open Weather Map: Current Weather API
-  - Chatbot: Collect.chat
+## Tech Stack
 
-## Nominations 🤝
-We'd love to nominate our team for the following Prizes:
- - Overall Prizes
- - First Wave Hack
-   - New Hackers: [pragya-bharti](https://www.github.com/pragya-bharti) and [yashsaini24](https://www.github.com/yashsaini24)
- - Best Surfs Up Hack
- - Best Domain name from Domain.com
-   - Domains Registered:
-     1. visitabeach.online
-     2. beachwith.tech
- - Best Domain Name from GoDaddy Registry [APAC Only]
-   - Domain Registered: beachwith.us
+- **Web:** HTML5, CSS3, JavaScript, jQuery, Bootstrap
+- **Android:** Java (Android Studio project under `Android App/VisitaBeach/`)
+- **APIs:** OpenWeatherMap (Current Weather)
+- **Chatbot:** Collect.chat
+- **Hosting:** Netlify
 
-## Future Upgrades and Iterations 🐬
-  - Use Geocoding API to fetch accurate details.
-  - Integrate more elements in terms of statistics.
-  - Use Logical Jump in Chatbot for a more interactive experience.
+## Repo Structure
 
-## Collaborators 🤖
-Built with ❤️ and ⌨️ by ~~beep-bops~~
+```
+Surfs-Up-Hacks/
+├── index.html              # Web app entry
+├── devs.html               # Team credits page
+├── assets/
+│   ├── app.js / fetch.js / quotes.js / script.js / ui.js
+│   ├── stylesheet/
+│   ├── images/
+│   └── repository/         # Banner + screenshots
+├── Android App/
+│   └── VisitaBeach/        # Android Studio project
+└── README.md
+```
 
-![GitHub Contributors Image](https://contrib.rocks/image?repo=aaishikasb/Surfs-Up-Hacks)
+## Getting Started
+
+**Web:**
+
+1. Open [visitabeach.netlify.app](http://visitabeach.netlify.app) in your browser, **or**
+2. Clone and open `index.html`:
+
+```bash
+git clone https://github.com/GyaneshSamanta/Surfs-Up-Hacks.git
+cd Surfs-Up-Hacks
+# open index.html in your browser
+```
+
+(The page calls a public weather API at runtime — internet required.)
+
+**Android:** open `Android App/VisitaBeach/` in Android Studio, sync Gradle, and run on an emulator or device. Pre-built APKs may be available under the *Releases* tab.
+
+## Contributing
+
+Hackathon code, but PRs welcome — particularly geocoding integration, more chatbot branches, and additional weather statistics.
+
+## License
+
+Released for educational and demo use.
+
+## Credits
+
+**Team megaBite** — built with care at Surfs Up Hacks 2021.
+
+| Name | GitHub |
+|---|---|
+| Gyanesh Samanta | [@GyaneshSamanta](https://github.com/GyaneshSamanta) |
+| Aaishika S. B. | [@aaishikasb](https://github.com/aaishikasb) |
+| Pragya Bharti | [@pragya-bharti](https://www.github.com/pragya-bharti) |
+| Yash Saini | [@yashsaini24](https://www.github.com/yashsaini24) |
+
+![Contributors](https://contrib.rocks/image?repo=aaishikasb/Surfs-Up-Hacks)
